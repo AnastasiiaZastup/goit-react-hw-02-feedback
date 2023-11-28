@@ -1,16 +1,24 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import { Component } from "react";
+
+class App extends Component {
+  
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0
+  }
+  
+  updateClicks = () => {              //скидуємо всі стани до 0
+    this.setState(prevState => {
+      return {
+        clicks: prevState.clicks + 1,
+      };
+    });
+  }
+
+  render() {
+    
+  }
+
+
+}
