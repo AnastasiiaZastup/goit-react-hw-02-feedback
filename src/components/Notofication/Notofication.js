@@ -1,5 +1,6 @@
 import React from 'react';
+import { Notific } from './Notofication.styled';
 
 export const Notofication = ({ message }) => {
-    return <p>{message}</p>;
+    return <Notific>{message}</Notific>;
 };

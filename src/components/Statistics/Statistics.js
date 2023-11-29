@@ -1,26 +1,27 @@
 import React from 'react';
+import { Text } from './Statistics.styled';
 
 export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     return (
         <ul>
             <li>
-                <p>Good: { good}</p>
+                <Text>Good: { good}</Text>
             </li>
 
             <li>
-                <p>Neutral: {neutral}</p>
+                <Text>Neutral: {neutral}</Text>
             </li>
 
             <li>
-                <p>Bad: {bad}</p>
+                <Text>Bad: {bad}</Text>
             </li>
 
             <li>
-                <p>Total: {total}</p>
+                <Text>Total: {total}</Text>
             </li>
 
             <li>
-                <p>Positive Feedback: {positivePercentage}%</p>
+                <Text>Positive Feedback: {positivePercentage}%</Text>
             </li>
         </ul>
     )
