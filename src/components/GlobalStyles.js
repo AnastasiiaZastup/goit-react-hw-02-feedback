@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
-    padding: 30px;
+    padding: 31px;
   }
   
   ul {
